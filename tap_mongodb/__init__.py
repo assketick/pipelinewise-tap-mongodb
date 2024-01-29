@@ -262,7 +262,7 @@ def get_connection_string(config: Dict):
     connection_query = {
         'readPreference': 'secondaryPreferred',
         'authSource': config['auth_database'],
-        'timeoutMS': 120000,
+        'timeoutMS': 3600000,
     }
 
     if config.get('replica_set'):
