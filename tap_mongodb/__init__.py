@@ -264,10 +264,10 @@ def get_connection_string(config: Dict):
         'authSource': config['auth_database'],
         'timeoutMS': 3600000,
         'keepAlive': 'true',
-        'poolSize': '30',
+        'poolSize': 30,
         'autoReconnect': 'true',
-        'socketTimeoutMS': '360000',
-        'connectTimeoutMS': '360000'
+        'socketTimeoutMS': 360000,
+        'connectTimeoutMS': 360000
     }
 
     if config.get('replica_set'):
